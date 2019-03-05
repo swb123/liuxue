@@ -55,29 +55,30 @@
                 <form class="sui-form sui-form pull-left"> 
                     <input type="text" placeholder="单行输入" /> 
                     <span class="btn-search fa fa-search"></span> 
-                </form> 
-				<div class="sui-nav pull-right info" v-if="user.name===undefined"> 
-                    <li><a href="/store/shopcart" class="notice">购物车</a></li>
-                </div>
-                 <div class="sui-nav pull-right info" v-if="user.name===undefined"> 
-                    <li><a href="/store/order" class="notice">订单中心</a></li>
-                </div>
-                
+                </form>  
                 <div class="sui-nav pull-right info" v-if="user.name!==undefined">
+                     <!--
                     <li><a href="#" class="notice"><i class="el-icon-document sui-brand "></i></a></li>
                     <li><a href="#" class="notice"><i class="el-icon-message sui-brand "></i></a></li>
+                    -->
                     <li><a href="/manager" class="notice">{{user.name}}</a></li>     
                     <li><a @click="logout" class="notice">退出登陆</a></li>            
                     <li><a href="/manager"  class="homego"><img :src="user.avatar" width="50px" height="50px" :alt="user.name" /></a></li> 
                 </div> 
                 <div class="sui-nav pull-right info" v-if="user.name===undefined"> 
+                    <!--
                     <li><a href="#" class="notice"><i class="el-icon-document sui-brand "></i></a></li>
                     <li><a href="#" class="notice"><i class="el-icon-message sui-brand "></i></a></li>
+                    -->
                     <li><a href="/login" class="notice">注册/登陆</a></li>
+                </div>
+                 <!--购物车在登陆才出现-->
+				<div class="sui-nav pull-right info" v-if="user.name!==undefined"> 
+                    <li><a href="/store/shopcart" class="notice">购物车</a></li>
+                    <li><a href="/store/order" class="notice">订单中心</a></li>
                 </div>
             </div> 
         </div> 
-
         </header>
         <nuxt/>
       <footer>
@@ -107,10 +108,10 @@
                 常用链接
             </dt> 
             <dd>
-                传智播客
+                梦夕网
             </dd> 
             <dd>
-                传智论坛
+                梦夕论坛
             </dd> 
             </dl> 
             <dl> 

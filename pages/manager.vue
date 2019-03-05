@@ -7,7 +7,6 @@
                 <div class="photo"> 
                 <img :src="user.avatar" alt="" class="person" /> 
                 <div class="share"> 
-                <span><img src="~/assets/img/asset-QQ.png" alt="" width="28" height="28" /></span> 
                 <span><img src="~/assets/img/asset-weixin.png" alt="" width="28" height="28" /></span> 
                 <span><img src="~/assets/img/asset-weibo.png" alt="" width="28" height="28" /></span> 
                 </div> 
@@ -58,10 +57,10 @@
                 <div class="myhome-list"> 
                 <ul class="home-list"> 
                 <router-link to="/manager" tag="li" active-class="active" exact><a>我的评估</a></router-link>                        
-                <router-link to="/manager/myshare" tag="li" active-class="active"><a>我的订单</a></router-link> 
+                <router-link to="/store/order" tag="li" active-class="active"><a>我的订单</a></router-link> 
                 <router-link to="/warehouse" tag="li" active-class="active"><a>我的仓库</a></router-link>  
                 <router-link to="/manager/account" tag="li" active-class="active"><a>账户设置</a></router-link>    
-                <router-link to="/manager/goods" tag="li" active-class="active"><a>申请商家</a></router-link>          
+                <router-link to="/manager/goods" tag="li" active-class="active"><a>商品管理</a></router-link>          
                 </ul> 
                 </div> 
             </div> 
