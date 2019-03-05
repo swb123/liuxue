@@ -118,23 +118,6 @@ export default {
           }
         })
       }    
-<<<<<<< HEAD
     }  
-=======
-    },
-    mounted(){
-      var obj=new WxLogin({
-        id: 'weixin',
-        appid: 'wx3bdb1192c22883f3',
-        scope: 'snsapi_login',
-        redirect_uri: 'http://note.java.itcast.cn/weixinlogin'
-      })
-    },
-    head: {
-      script:[
-        {src:'http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js'}
-      ]
-    }   
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
 }
 </script>

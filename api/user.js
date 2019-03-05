@@ -5,11 +5,7 @@ export default {
     sendsms(mobile){
         return request({
             url:`/${group_name}/${api_name}/sendsms/${mobile}`,
-<<<<<<< HEAD
             method: 'post'
-=======
-            method: 'put'
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
         })
     },
     register(user,code){
@@ -40,7 +36,6 @@ export default {
             method: 'put',
             data: user
         })
-<<<<<<< HEAD
     },
     assess(user){
         return request({
@@ -48,7 +43,5 @@ export default {
             method: 'get',
             data: user
         })
-=======
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
     }
 }

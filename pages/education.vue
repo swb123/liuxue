@@ -17,7 +17,6 @@
     <div class="right-content">
 
         <div class="fl middle">
-<<<<<<< HEAD
             <form @submit.prevent="submit">
             <div class="control-group">
               <div class="block">
@@ -66,48 +65,6 @@
             
        <br/>
             
-=======
-            <div class="control-group">
-                <label for="inputaccount" class="control-label" style = " margin:10px;font-size:20px">选择地区</label>
-                <el-select id = "inputaccount" v-model="value8" filterable placeholder="地区">
-                <el-option
-                    v-for="item in options"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                </el-option>
-                </el-select>
-                <el-select id = "inputaccount" v-model="value9" filterable placeholder="城市">
-                <el-option
-                    v-for="item in options1"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                </el-option>
-                </el-select>
-            </div>
-            <div class="control-group">
-                <label for="inputaccount" class="control-label" style = " margin:10px;font-size:20px">专业性质</label>
-                <el-select id = "inputaccount" v-model="value8" filterable placeholder="学位类型">
-                <el-option
-                    v-for="item in options"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                </el-option>
-                </el-select>
-                <el-select id = "inputaccount" v-model="value9" filterable placeholder="专业方向">
-                <el-option
-                    v-for="item in options1"
-                    :key="item.value"
-                    :label="item.label"
-                    :value="item.value">
-                </el-option>
-                </el-select>
-            </div>
-            <br/>
-            <nuxt-child/>
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
         </div>
         <div class="fl right"> 
 
@@ -183,7 +140,6 @@
 </template>
 <script>
 import '~/assets/css/page-headline-logined.css'
-<<<<<<< HEAD
 import '~/assets/css/page-sj-makeFriends-index.css'
 import axios from 'axios'
 import educationApi from '@/api/education'
@@ -394,47 +350,6 @@ export default {
     },
     
 
-=======
-export default {
-    data() {
-      return {
-        options: [{
-          value: '选项1',
-          label: '澳洲'
-        }, {
-          value: '选项2',
-          label: '美国'
-        }, {
-          value: '选项3',
-          label: '英国'
-        }, {
-          value: '选项4',
-          label: '日本'
-        }, {
-          value: '选项5',
-          label: '新西兰'
-        }],
-        value8: '',
-        options1: [{
-          value: '选项1',
-          label: '墨尔本'
-        }, {
-          value: '选项2',
-          label: '芝加哥'
-        }, {
-          value: '选项3',
-          label: '伦敦'
-        }, {
-          value: '选项4',
-          label: '东京'
-        }, {
-          value: '选项5',
-          label: '新西兰'
-        }],
-        value9: ''
-      }
-    }
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
   
 }
 </script>

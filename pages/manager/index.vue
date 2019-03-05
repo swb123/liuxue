@@ -1,6 +1,5 @@
 <template>
     <div> 
-<<<<<<< HEAD
         <el-form :model="assessform" :rules="rules" ref="assessform" label-width="100px">
 
         <el-form-item label="目标国家" prop="targetcountry">
@@ -8,20 +7,10 @@
             <el-select v-model="assessform.targetcountry" placeholder="请选择留学国家">
             <el-option label="加拿大" value="canada"></el-option>
             <el-option label="澳洲" value="australia"></el-option>
-=======
-        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" >
-
-        <el-form-item label="目标国家" prop="region">
-            <el-col :span ="4">
-            <el-select v-model="ruleForm.region" placeholder="请选择留学国家">
-            <el-option label="美国" value="shanghai"></el-option>
-            <el-option label="英国" value="beijing"></el-option>
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
             </el-select>
             </el-col>
         </el-form-item>
 
-<<<<<<< HEAD
          <el-form-item label="目标院校" prop="targetSchool">
             <el-col :span ="18">
             <el-input type="text" v-model="assessform.targetSchool" autocomplete="off"></el-input>
@@ -38,17 +27,10 @@
             <el-col :span="18">
             <el-form-item prop="admissiontime">
                 <el-date-picker type="date" placeholder="选择日期" v-model="assessform.admissiontime" style="width: 100%;"></el-date-picker>
-=======
-        <el-form-item label="入学时间" required>
-            <el-col :span="4">
-            <el-form-item prop="date1">
-                <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
             </el-form-item>
             </el-col>
         </el-form-item>
             
-<<<<<<< HEAD
             <el-form-item label="毕业学校" prop="undergraduate">
             <el-col :span ="18">
             <el-input type="text" v-model="assessform.undergraduate" autocomplete="off"></el-input>
@@ -64,30 +46,12 @@
         <el-form-item label="英语类型" prop="englishtype">
             <el-col :span ="18">
             <el-select v-model="assessform.englishtype" placeholder="现有英语成绩类型">
-=======
-            <el-form-item label="本科学校" prop="undergraduate">
-            <el-col :span ="4">
-            <el-input type="text" v-model="ruleForm.undergraduate" autocomplete="off"></el-input>
-            </el-col>
-        </el-form-item>
-
-            <el-form-item label="个人绩点" prop="gpa">
-            <el-col :span ="4">
-            <el-input type="text" v-model="ruleForm.gpa" autocomplete="off"></el-input>
-            </el-col>
-        </el-form-item>
-
-        <el-form-item label="英语类型" prop="type">
-            <el-col :span ="4">
-            <el-select v-model="ruleForm.type" placeholder="现有英语成绩类型">
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
             <el-option label="雅思" value="shanghai"></el-option>
             <el-option label="托福" value="beijing"></el-option>
             <el-option label="四六级" value="beijing"></el-option>
             </el-select>
             </el-col>
         </el-form-item>
-<<<<<<< HEAD
         
         <el-form-item label="英语成绩" prop="englishgrade">
             <el-col :span ="18">
@@ -97,29 +61,11 @@
       
         <el-form-item label="目前学历" prop="education">
             <el-radio-group v-model="assessform.education">
-=======
-
-        <el-form-item label="目标院校" prop="targetSchool">
-            <el-col :span ="4">
-            <el-input type="text" v-model="ruleForm.targetSchool" autocomplete="off"></el-input>
-            </el-col>
-        </el-form-item>
-
-        <el-form-item label="目标专业" prop="targetMajor">
-            <el-col :span ="4">
-            <el-input type="text" v-model="ruleForm.targetMajor" autocomplete="off"></el-input>
-            </el-col>
-        </el-form-item>
-
-        <el-form-item label="目前学历" prop="education">
-            <el-radio-group v-model="ruleForm.education">
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
             <el-radio label="本科"></el-radio>
             <el-radio label="硕士"></el-radio>
             </el-radio-group>
         </el-form-item>
         <el-form-item label="获奖情况" prop="prize">
-<<<<<<< HEAD
             <el-input type="textarea" v-model="assessform.prize"></el-input>
         </el-form-item>
 
@@ -129,25 +75,12 @@
         <el-form-item>
             <el-button type="primary" @click="submitForm('assessform')">查看评估结果</el-button>
             <el-button @click="resetForm('assessform')">重置</el-button>
-=======
-            <el-input type="textarea" v-model="ruleForm.prize"></el-input>
-        </el-form-item>
-
-            <el-form-item label="实习情况" prop="practice">
-            <el-input type="textarea" v-model="ruleForm.practice"></el-input>
-        </el-form-item>
-
-        <el-form-item>
-            <el-button type="primary" @click="submitForm('ruleForm')">重置</el-button>
-            <el-button @click="resetForm('ruleForm')">查看评估</el-button>
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
         </el-form-item>
         </el-form>
     </div> 
 </template>
 
 <script>
-<<<<<<< HEAD
 import userApi from '@/api/user'
   export default {
     data() {
@@ -161,25 +94,10 @@ import userApi from '@/api/user'
           gpa: '',
           englishtype: '',
           englishgrade:'',
-=======
-  export default {
-    data() {
-      return {
-        ruleForm: {
-          name: '',
-          region: '',
-          date1: '',
-          type: '',
-          undergraduate:'',
-          gpa: '',
-          targetSchool:'',
-          targetMajor:'',
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
           education:'',
           prize:'',
           practice:''
         },
-<<<<<<< HEAD
         assessrate: "",
         rules: {
           targetcountry: [
@@ -189,16 +107,6 @@ import userApi from '@/api/user'
             { type: 'date', required: true, message: '请选择日期', trigger: 'change' }
           ],
           englishtype: [
-=======
-        rules: {
-          region: [
-            { required: true, message: '请选择留学国家', trigger: 'change' }
-          ],
-          date1: [
-            { type: 'date', required: true, message: '请选择日期', trigger: 'change' }
-          ],
-          type: [
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
             {  required: true, message: '请选择英语类型', trigger: 'change' }
           ],
           undergraduate: [
@@ -216,12 +124,9 @@ import userApi from '@/api/user'
           education:[
               { required: true, message: '目前学历不能为空'},
           ],
-<<<<<<< HEAD
           englishgrade:[
               { required: true, message: '成绩不能为空'},
           ],
-=======
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
         }
       };
     },
@@ -229,7 +134,6 @@ import userApi from '@/api/user'
       submitForm(formName) {
         this.$refs[formName].validate((valid) => {
           if (valid) {
-<<<<<<< HEAD
             console.log(JSON.stringify(this.assessform));
             userApi.assess(this.assessform ).then( res=> {
               this.assessrate=res.data.assessrate;
@@ -245,9 +149,6 @@ import userApi from '@/api/user'
               });
 			})
           
-=======
-            alert('submit!');
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
           } else {
             console.log('error submit!!');
             return false;
