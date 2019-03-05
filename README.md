@@ -17,6 +17,7 @@ $ npm start
 
 # generate static project
 $ npm run generate
+#陈三县测试
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
