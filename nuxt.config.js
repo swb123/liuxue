@@ -3,11 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-<<<<<<< HEAD
     title: '梦夕网',
-=======
-    title: '十次方',
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

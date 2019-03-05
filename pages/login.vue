@@ -61,13 +61,9 @@
        <label> <input type="checkbox" name="remember-me" /><span class="type-text" style="font-size:12px;">记住登录状态</span> </label> 
        <button type="button" class="sui-btn btn-danger btn-yes" @click="login" >登 录</button> 
       </div> 
-<<<<<<< HEAD
 <!--
       <div id="weixin"></div>
 -->
-=======
-      <div id="weixin"></div>
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
      </form> 
     </div> 
    </div> 

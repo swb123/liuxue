@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "dream",
-=======
-  "name": "tensquare",
->>>>>>> 413a6db0d4ad0a44ad01a4aafcd6c8b222ffa71a
   "version": "1.0.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
